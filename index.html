@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosmin Burechita - Resume</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-black text-white">
+    <nav class="fixed top-0 w-full bg-dark shadow-md z-50">
+      <div class="container mx-auto px-6 py-3">
+        <div class="flex items-center justify-between">
+          <h1 class="text-xl font-bold text-accent">Cosmin Burechita</h1>
+          <div class="hidden md:flex space-x-6">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#projects" class="nav-link">Projects</a>
+          </div>
+          <button class="md:hidden menu-button text-white">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu hidden md:hidden p-4">
+        <a href="#about" class="block py-2 text-white hover:text-accent"
+          >About</a
+        >
+        <a href="#skills" class="block py-2 text-white hover:text-accent"
+          >Skills</a
+        >
+        <a href="#experience" class="block py-2 text-white hover:text-accent"
+          >Experience</a
+        >
+        <a href="#projects" class="block py-2 text-white hover:text-accent"
+          >Projects</a
+        >
+      </div>
+    </nav>
+
+    <main class="container mx-auto px-6 pt-24">
+      <section id="about" class="min-h-screen flex items-center">
+        <div class="animate__animated animate__fadeIn">
+          <h2 class="text-4xl font-bold text-white mb-4">Hello, I'm Cosmin</h2>
+          <p class="text-xl text-gray-300 max-w-2xl">
+            A graduate of the Faculty of Automatics and Computer Science at
+            Gheorghe Asachi Technical University in Iași. I'm a curious,
+            adaptable, and open-minded individual with a passion for learning
+            and problem-solving.
+          </p>
+          <div class="mt-6 flex space-x-4">
+            <a
+              href="tel:0757059377"
+              class="bg-accent text-white px-6 py-2 rounded-lg hover:bg-red-700 transition-colors"
+            >
+              Call Me
+            </a>
+            <a
+              href="mailto:cosmin.burechita@gmail.com"
+              class="border border-accent text-accent px-6 py-2 rounded-lg hover-accent transition-colors"
+            >
+              Email Me
+            </a>
+            <a
+              href="https://www.linkedin.com/in/cosmin-burechita"
+              target="_blank"
+              class="border border-accent text-accent px-6 py-2 rounded-lg hover-accent transition-colors"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="py-20">
+        <h2 class="text-3xl font-bold text-white mb-8 fade-up">Skills</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="fade-up">
+            <h3 class="text-xl font-semibold mb-4 text-accent">Frontend</h3>
+            <div class="space-y-4">
+              <div class="skill-item">
+                <div class="flex justify-between mb-1">
+                  <span>HTML5/CSS3</span>
+                </div>
+                <div class="skill-bar-bg rounded-full h-2">
+                  <div
+                    class="skill-bar skill-bar-fill rounded-full h-2"
+                    data-width="90%"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="flex justify-between mb-1">
+                  <span>JavaScript ES6</span>
+                </div>
+                <div class="skill-bar-bg rounded-full h-2">
+                  <div
+                    class="skill-bar skill-bar-fill rounded-full h-2"
+                    data-width="85%"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="flex justify-between mb-1">
+                  <span>Bootstrap/Tailwind CSS</span>
+                </div>
+                <div class="skill-bar-bg rounded-full h-2">
+                  <div
+                    class="skill-bar skill-bar-fill rounded-full h-2"
+                    data-width="85%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fade-up">
+            <h3 class="text-xl font-semibold mb-4 text-accent">Backend</h3>
+            <div class="space-y-4">
+              <div class="skill-item">
+                <div class="flex justify-between mb-1">
+                  <span>PHP/Laravel</span>
+                </div>
+                <div class="skill-bar-bg rounded-full h-2">
+                  <div
+                    class="skill-bar skill-bar-fill rounded-full h-2"
+                    data-width="80%"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="flex justify-between mb-1">
+                  <span>Python</span>
+                </div>
+                <div class="skill-bar-bg rounded-full h-2">
+                  <div
+                    class="skill-bar skill-bar-fill rounded-full h-2"
+                    data-width="80%"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="flex justify-between mb-1">
+                  <span>MySQL/Node.js</span>
+                </div>
+                <div class="skill-bar-bg rounded-full h-2">
+                  <div
+                    class="skill-bar skill-bar-fill rounded-full h-2"
+                    data-width="75%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fade-up">
+            <h3 class="text-xl font-semibold mb-4 text-accent">Others</h3>
+            <div class="space-y-4">
+              <div class="skill-item">
+                <div class="flex justify-between mb-1">
+                  <span>Git/Linux/Bash</span>
+                </div>
+                <div class="skill-bar-bg rounded-full h-2">
+                  <div
+                    class="skill-bar skill-bar-fill rounded-full h-2"
+                    data-width="85%"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="flex justify-between mb-1">
+                  <span>C/C++</span>
+                </div>
+                <div class="skill-bar-bg rounded-full h-2">
+                  <div
+                    class="skill-bar skill-bar-fill rounded-full h-2"
+                    data-width="75%"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="flex justify-between mb-1">
+                  <span>MatLab/AutoCAD</span>
+                </div>
+                <div class="skill-bar-bg rounded-full h-2">
+                  <div
+                    class="skill-bar skill-bar-fill rounded-full h-2"
+                    data-width="70%"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="flex justify-between mb-1">
+                  <span>Data Structures</span>
+                </div>
+                <div class="skill-bar-bg rounded-full h-2">
+                  <div
+                    class="skill-bar skill-bar-fill rounded-full h-2"
+                    data-width="80%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="py-20">
+        <h2 class="text-3xl font-bold text-white mb-8 fade-up">Experience</h2>
+        <div class="space-y-8">
+          <div
+            class="bg-dark rounded-lg shadow-md p-6 fade-up border border-gray-800"
+          >
+            <h3 class="text-xl font-semibold text-white">Software Engineer</h3>
+            <p class="text-accent">Alten Romania | June 2022 - Jan 2025</p>
+
+            <div class="mt-4 space-y-6">
+              <!-- Internship Period -->
+              <div>
+                <h4 class="text-lg font-semibold text-white mb-2">
+                  Software Development Intern
+                  <span class="text-accent">| June 2022 - December 2022</span>
+                </h4>
+                <ul class="space-y-2 text-gray-300">
+                  <li>
+                    • Successfully completed a comprehensive 6-month training
+                    program focused on:
+                  </li>
+                  <li class="ml-6">
+                    - C/C++ programming and embedded systems development
+                  </li>
+                  <li class="ml-6">- Python scripting and automation</li>
+                  <li class="ml-6">- Software testing methodologies</li>
+                  <li>
+                    • Participated in QA activities using Jira and Confluence
+                    for task tracking
+                  </li>
+                  <li>
+                    • Gained foundational knowledge in automotive software
+                    development
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Developer Role -->
+              <div>
+                <h4 class="text-lg font-semibold text-white mb-2">
+                  Software Developer
+                  <span class="text-accent">| January 2023 - January 2025</span>
+                </h4>
+                <ul class="space-y-2 text-gray-300">
+                  <li>
+                    • Transitioned into a full-time developer role after
+                    successful internship
+                  </li>
+                  <li>
+                    • Contributed to the development of solutions using AUTOSAR
+                    Adaptive platform
+                  </li>
+                  <li>
+                    • Maintained clear communication across team and
+                    stakeholders
+                  </li>
+                  <li>• Verified and maintained technical documentation</li>
+                  <li>
+                    • Enhanced embedded systems development skills through
+                    hands-on project work
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-gray-700">
+              <p class="text-sm text-gray-400">
+                <span class="text-accent font-semibold">Key Technologies:</span>
+                Python, Embedded C/C++, AUTOSAR Adaptive, Jira, Confluence
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-dark rounded-lg shadow-md p-6 fade-up border border-gray-800"
+          >
+            <h3 class="text-xl font-semibold text-white">Intern</h3>
+            <p class="text-accent">Continental</p>
+            <ul class="mt-4 space-y-2 text-gray-300">
+              <li>• Gained hands-on experience in software testing</li>
+              <li>
+                • Designed and implemented test cases for automotive systems
+              </li>
+              <li>• Created test scenarios using Vector CANoe</li>
+              <li>
+                • Learned fundamentals of quality assurance in embedded
+                environments
+              </li>
+            </ul>
+            <div class="mt-4">
+              <p class="text-sm text-gray-400">
+                Technologies: Vector CANoe, Manual & Automated Testing, Embedded
+                Systems
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="py-20">
+        <h2 class="text-3xl font-bold text-white mb-8 fade-up">Projects</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="project-card p-6 fade-up">
+            <h3 class="text-xl font-semibold text-white">
+              Full-Stack CRUD Application
+            </h3>
+            <p class="text-gray-400 mt-2">
+              Built a web-based system for managing products with modular
+              architecture and clean UI.
+            </p>
+            <ul class="mt-4 text-gray-300 list-disc list-inside">
+              <li>Modular project architecture (views/helpers/public)</li>
+              <li>MySQL integration for data storage</li>
+              <li>Responsive frontend with reusable components</li>
+              <li>Clean UI using Bootstrap CSS</li>
+            </ul>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 bg-dark text-accent border border-accent rounded-full text-sm"
+                >PHP</span
+              >
+              <span
+                class="px-3 py-1 bg-dark text-accent border border-accent rounded-full text-sm"
+                >MySQL</span
+              >
+              <span
+                class="px-3 py-1 bg-dark text-accent border border-accent rounded-full text-sm"
+                >Bootstrap</span
+              >
+              <span
+                class="px-3 py-1 bg-dark text-accent border border-accent rounded-full text-sm"
+                >Laragon</span
+              >
+            </div>
+          </div>
+
+          <div class="project-card p-6 fade-up">
+            <h3 class="text-xl font-semibold text-white">OOP Form Builder</h3>
+            <p class="text-gray-400 mt-2">
+              Developed an object-oriented PHP application for dynamic HTML form
+              generation.
+            </p>
+            <ul class="mt-4 text-gray-300 list-disc list-inside">
+              <li>Class-based system for form elements</li>
+              <li>Abstract base class with typed properties</li>
+              <li>Clean separation of concerns</li>
+              <li>Modular and reusable components</li>
+            </ul>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 bg-dark text-accent border border-accent rounded-full text-sm"
+                >PHP OOP</span
+              >
+              <span
+                class="px-3 py-1 bg-dark text-accent border border-accent rounded-full text-sm"
+                >HTML</span
+              >
+              <span
+                class="px-3 py-1 bg-dark text-accent border border-accent rounded-full text-sm"
+                >Laragon</span
+              >
+            </div>
+          </div>
+
+          <div class="project-card p-6 fade-up">
+            <h3 class="text-xl font-semibold text-white">
+              Cryptography Project
+            </h3>
+            <p class="text-gray-400 mt-2">
+              Python-based file encryption application with multiple algorithm
+              support.
+            </p>
+            <ul class="mt-4 text-gray-300 list-disc list-inside">
+              <li>Backend encryption logic implementation</li>
+              <li>File selection and secure replacement</li>
+              <li>Multiple encryption algorithms</li>
+              <li>User-friendly interface</li>
+            </ul>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 bg-dark text-accent border border-accent rounded-full text-sm"
+                >Python</span
+              >
+              <span
+                class="px-3 py-1 bg-dark text-accent border border-accent rounded-full text-sm"
+                >Tkinter</span
+              >
+            </div>
+          </div>
+
+          <div class="project-card p-6 fade-up">
+            <h3 class="text-xl font-semibold text-white">Pac-Man Game</h3>
+            <p class="text-gray-400 mt-2">
+              Java-based Pac-Man game with custom graphics and multiple levels.
+            </p>
+            <ul class="mt-4 text-gray-300 list-disc list-inside">
+              <li>OOP concepts implementation</li>
+              <li>Custom game logic and AI behavior</li>
+              <li>Three difficulty levels</li>
+              <li>Custom textures and animations</li>
+            </ul>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 bg-dark text-accent border border-accent rounded-full text-sm"
+                >Java</span
+              >
+              <span
+                class="px-3 py-1 bg-dark text-accent border border-accent rounded-full text-sm"
+                >OOP</span
+              >
+              <span
+                class="px-3 py-1 bg-dark text-accent border border-accent rounded-full text-sm"
+                >Photoshop</span
+              >
+            </div>
+          </div>
+
+          <div class="project-card p-6 fade-up">
+            <h3 class="text-xl font-semibold text-white">
+              Opening Opportunities - Microsoft Romania
+            </h3>
+            <p class="text-gray-400 mt-2">
+              Collaborated in a student team to design a website with a search
+              module for sneakers.
+            </p>
+            <ul class="mt-4 text-gray-300 list-disc list-inside">
+              <li>Worked collaboratively in an agile-like setting</li>
+              <li>Built a user-friendly search module from scratch</li>
+              <li>Gained exposure to working under mentorship and deadlines</li>
+              <li>First team-based experience in web development</li>
+            </ul>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 bg-dark text-accent border border-accent rounded-full text-sm"
+                >HTML</span
+              >
+              <span
+                class="px-3 py-1 bg-dark text-accent border border-accent rounded-full text-sm"
+                >CSS</span
+              >
+              <span
+                class="px-3 py-1 bg-dark text-accent border border-accent rounded-full text-sm"
+                >JavaScript</span
+              >
+              <span
+                class="px-3 py-1 bg-dark text-accent border border-accent rounded-full text-sm"
+                >Git</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="py-20">
+        <h2 class="text-3xl font-bold text-white mb-8 fade-up">Education</h2>
+        <div
+          class="bg-dark rounded-lg shadow-md p-6 fade-up border border-gray-800"
+        >
+          <h3 class="text-xl font-semibold text-white">
+            Faculty of Automatics and Computer Science
+          </h3>
+          <p class="text-accent">
+            Technical University Gheorghe Asachi | 2019 - 2023
+          </p>
+          <div class="mt-4">
+            <h4 class="text-lg font-semibold text-white mb-2">
+              Certifications
+            </h4>
+            <ul class="space-y-2 text-gray-300">
+              <li>
+                • The Complete Full-Stack Web Development Bootcamp - Udemy
+              </li>
+              <li>• PHP, HTML/CSS, MySQL Courses - Laracast</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark mt-20">
+      <div class="container mx-auto px-6 py-8">
+        <div class="text-center text-gray-400">
+          <p>© 2024 Cosmin Burechita. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
