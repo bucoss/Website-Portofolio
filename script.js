@@ -20,9 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initialize skill bars
   const skillBars = document.querySelectorAll(".skill-bar");
   skillBars.forEach((bar) => {
-    const targetWidth = bar.getAttribute("data-width");
+    const width = bar.dataset.width;
     setTimeout(() => {
-      bar.style.width = targetWidth;
+      bar.style.width = width;
     }, 500);
   });
 

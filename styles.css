@@ -1,3 +1,133 @@
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Liquid Animation Background */
+@keyframes liquidMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    #000000,
+    #1a1a1a,
+    #ff0000,
+    #ff3333,
+    #1a1a1a,
+    #000000
+  );
+  background-size: 300% 300%;
+  animation: liquidMove 20s ease infinite;
+  opacity: 0.15;
+  z-index: -1;
+  filter: blur(50px);
+}
+
+/* Add a subtle overlay to ensure text readability */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at center,
+    transparent 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  z-index: -1;
+}
+
+/* Add floating particles */
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-20px) translateX(10px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+.particle {
+  position: fixed;
+  width: 4px;
+  height: 4px;
+  background: rgba(255, 0, 0, 0.3);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+  animation: float 8s ease-in-out infinite;
+}
+
+.particle:nth-child(1) {
+  left: 10%;
+  top: 20%;
+  animation-delay: 0s;
+}
+.particle:nth-child(2) {
+  left: 20%;
+  top: 60%;
+  animation-delay: 2s;
+}
+.particle:nth-child(3) {
+  left: 80%;
+  top: 40%;
+  animation-delay: 4s;
+}
+.particle:nth-child(4) {
+  left: 90%;
+  top: 80%;
+  animation-delay: 6s;
+}
+.particle:nth-child(5) {
+  left: 50%;
+  top: 30%;
+  animation-delay: 1s;
+}
+.particle:nth-child(6) {
+  left: 70%;
+  top: 70%;
+  animation-delay: 3s;
+}
+.particle:nth-child(7) {
+  left: 30%;
+  top: 90%;
+  animation-delay: 5s;
+}
+.particle:nth-child(8) {
+  left: 40%;
+  top: 50%;
+  animation-delay: 7s;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
@@ -14,16 +144,6 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #cc0000;
-}
-
-/* Smooth Scroll */
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: #000000;
-  color: #ffffff;
 }
 
 /* Animations */
@@ -47,13 +167,15 @@ body {
 /* Card Hover Effects */
 .project-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #1a1a1a !important;
-  border: 1px solid #333333;
+  background-color: rgba(26, 26, 26, 0.8) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 0, 0, 0.2);
 }
 
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(255, 0, 0, 0.2);
+  border-color: rgba(255, 0, 0, 0.4);
 }
 
 /* Navigation Link Indicator */
@@ -77,24 +199,10 @@ body {
   width: 100%;
 }
 
-/* Mobile Menu Animation */
-@keyframes slideIn {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-.mobile-menu {
-  animation: slideIn 0.3s ease-out;
-  background-color: #1a1a1a !important;
-}
-
 /* Custom Classes */
 .bg-dark {
-  background-color: #1a1a1a !important;
+  background-color: rgba(26, 26, 26, 0.8) !important;
+  backdrop-filter: blur(10px);
 }
 
 .text-accent {
@@ -111,9 +219,61 @@ body {
 }
 
 .skill-bar-bg {
-  background-color: #333333 !important;
+  background-color: rgba(51, 51, 51, 0.8) !important;
 }
 
 .skill-bar-fill {
   background-color: #ff0000 !important;
+}
+
+/* Add glass effect to sections */
+section {
+  position: relative;
+  z-index: 1;
+}
+
+/* Add subtle glow effect to headings */
+h1,
+h2,
+h3,
+h4 {
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+}
+
+/* Add hover effect to buttons */
+button,
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+button::after,
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+button:hover::after,
+.btn:hover::after {
+  width: 300px;
+  height: 300px;
+}
+
+/* Scroll Progress Indicator */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #cc0000 var(--scroll), transparent 0);
+  z-index: 1000;
 }
